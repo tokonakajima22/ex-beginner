@@ -22,7 +22,7 @@ public class Exam03Controller {
 	public String result(Integer item1, Integer item2, Integer item3) {
 		int total = item1 + item2 + item3;
 		application.setAttribute("taxExcluded", total);
-		application.setAttribute("taxExcluded", total * 1.1);
+		application.setAttribute("taxincluded", (int)(total * 1.1));
 		return "exam03-result";
 		
 	}
